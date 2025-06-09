@@ -5,7 +5,7 @@ I've always wanted to create games ever since I was young and the retro nostalgi
 spoke to me. So I wanted to see how quickly I could put together a game, and here is the result!
 It's not perfect, but I've run out of time... for now. I might eventually update this. 
 
-[<img alt="It's a game!" src="guide/images/its_a_game.png" style="width: 480px" width="480">](https://nes-starter-kit.nes.science/)
+[<img alt="It's a game!" src="promo/images/new_game.png" style="width: 480px" width="480">](https://cetragames.com/)
 
 **Current game version:** 1.0.0
 
