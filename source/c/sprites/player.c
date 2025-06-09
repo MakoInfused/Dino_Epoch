@@ -60,6 +60,9 @@ ZEROPAGE_DEF(unsigned char, hasShield);
                                 "Look out for heart containers!"
                                 "They increase your health     "
                                 "permanently!                  "
+                                "Also there is a town far from "
+                                "here if you follow the road to"
+                                "the east and cross a bridge.  "
                                 "Hope you're having fun!       "
                                 "                              "
                                 "- Mako Infused";

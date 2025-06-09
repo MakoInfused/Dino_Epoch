@@ -27,6 +27,8 @@ void draw_win_screen(void) {
     put_str(NTADR_A(8, 9), "and found your");
     put_str(NTADR_A(8, 10), "one true love!");
 
+    put_str(NTADR_A(6, 12), "Thanks for playing!");
+
     // Hide all existing sprites
     oam_clear();
     ppu_on_all();
