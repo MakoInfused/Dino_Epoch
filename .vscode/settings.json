@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "palettes.config.h": "c",
+        "game_info.h": "c",
+        "bank_helpers.h": "c",
+        "map_helpers.h": "c",
+        "text_helpers.h": "c",
+        "map.h": "c",
+        "map_sprites.h": "c",
+        "system_constants.h": "c",
+        "pause.h": "c",
+        "player.h": "c",
+        "input_helpers.h": "c",
+        "game_states.h": "c"
+    }
+}

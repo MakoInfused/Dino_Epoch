@@ -1,0 +1,44 @@
+{
+    "configVersion": 10000,
+    "configVersionString": "1.0.0",
+    "name": "dino_epoch",
+    "mapper": "unrom",
+    "mirroring": "horizontal",
+    "useChrRam": false,
+    "useSram": true,
+    "sramSize": 8,
+    "chrBanks": 16,
+    "prgBanks": 8,
+    "includeC": true,
+    "ciProvider": "github",
+    "testProvider": "nes-test",
+    "installEmulator": "mesen",
+    "includeCLibrary": "neslib with famitracker",
+    "neslibNtscPal": "both",
+    "useTutorial": false,
+    "tutorialGroup": null,
+    "tutorialId": null,
+    "console": "nes",
+    "beforeStepActions": {
+        "build": [
+            "node tools/nes-starter-kit-tools-src/nes-starter-kit-tools-1.1.2/tmx2c/src/index.js 3 overworld levels/overworld.tmx source/c/generated/overworld",
+            "node tools/nes-starter-kit-tools-src/nes-starter-kit-tools-1.1.2/tmx2c/src/index.js 5 underworld levels/underworld.tmx source/c/generated/underworld",
+            "tools/famitone2/nsf2data sound/extra-sfx.nsf"
+        ]
+    },
+    "afterStepActions": {
+        "build": [
+            "node tools/nes-starter-kit-tools-src/nes-starter-kit-tools-1.1.2/chr2img/src/index.js graphics/tiles.chr graphics/palettes/main_bg.pal graphics/generated/tiles.png",
+            "node tools/nes-starter-kit-tools-src/nes-starter-kit-tools-1.1.2/sprite_def2img/src/index.js ./source/c/sprites/sprite_definitions.c ./graphics/sprites.chr ./graphics/palettes/main_sprite.pal graphics/generated/sprites.png"
+        ],
+        "download-dependencies": [
+            "cd tools/nes-starter-kit-tools-src/nes-starter-kit-tools-1.1.2/chr2img/src && npm install",
+            "cd tools/nes-starter-kit-tools-src/nes-starter-kit-tools-1.1.2/tmx2c/src && npm install",
+            "cd tools/nes-starter-kit-tools-src/nes-starter-kit-tools-1.1.2/sprite_def2img/src && npm install"
+        ]
+    },
+    "extraDependencies": [{
+        "name": "nes-starter-kit-tools-src",
+        "default": "https://gh.nes.science/nes-starter-kit-tools/archive/refs/tags/1.1.2.zip"
+    }]
+}
