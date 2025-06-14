@@ -103,12 +103,12 @@ const unsigned char* swordText4 =
 
  const unsigned char* boyText = 
                                 "Welcome to this grand epoch!  " 
-                                "I hope thy farest most well.  ";
+                                "I hope thou farest most well. ";
  const unsigned char* girlText = 
                                 "You look strange traveller.   " 
                                 "Where are you from?           "
                                 "Bosnia you say?               "
-                                "I've never of it.             ";
+                                "I've never heard of it.       ";
 
  const unsigned char* dukeText = 
                                 "My kingdom ... all in ruins.  " 
